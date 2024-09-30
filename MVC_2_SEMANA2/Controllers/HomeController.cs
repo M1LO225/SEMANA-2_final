@@ -9,7 +9,7 @@ namespace MVC_2_SEMANA2.Controllers
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
-        {   
+        { 
             _logger = logger;
         }
 
