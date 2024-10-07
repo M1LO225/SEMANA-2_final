@@ -6,10 +6,12 @@ namespace MVC_2_SEMANA2.Models
     public class EstudianteUDLA
     {
         [Key]
-        public string IdBanner { get; set; }
-        [AllowNull]
-        public string? Nombre { get; set; }
-        public Carrera Carrera { get; set; }
+        public string Id { get; set; }
+        [MaxLength(100)]
+        public string Nombre { get; set; }
+
+        [EmailAddress]
+        public string Correo { get; set; }
 
     }
 
